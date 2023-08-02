@@ -1,4 +1,12 @@
 <div class="container">
+    <div class="row">
+        <div class="col">
+            <a routerLink="/fruits/create" class="btn btn-primary">Create</a>
+        </div>
+    </div>
+</div>
+<br>
+<div class="container">
     <table class="table table-primary">
         <thead>
             <tr>
@@ -15,7 +23,7 @@
                 <td>{{fruit.name}}</td>
                 <td>{{fruit.quantity}}</td>
                 <td>{{fruit.price}}</td>
-                <td><button>Button</button></td>
+                <td><a [routerLink]="['/fruits/edit/', fruit.id]" class="btn btn-success">Edit</a></td>
             </tr>
         </tbody>
     </table>

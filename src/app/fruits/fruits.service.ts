@@ -18,4 +18,12 @@ export class FruitsService {
   create(resource: string, payload: Fruits){
     return this.http.post<Fruits>(this.apiURL + resource , payload);
   }
+
+  getById(resource: string, id: number){
+    return this.http.get<Fruits>(this.apiURL + resource + `/${id}`);
+  }
+
+  update(resource: string, payload: Fruits){
+    return this.http.put<Fruits>(this.apiURL + resource + `/${payload.id}`, payload);
+  }
 }

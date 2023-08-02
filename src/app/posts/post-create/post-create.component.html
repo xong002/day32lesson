@@ -1,0 +1,18 @@
+<div class="container">
+  <h1>Create new post</h1>
+  <br />
+  <a routerLink="/posts/home" class="btn btn-primary">Back</a>
+  <br />
+  <br>
+  <form [formGroup]="postForm" (ngSubmit)="createPost()">
+    <div class="mb-3">
+      <label for="title" class="form-label">Title</label>
+      <input type="text" name="title" class="form-control" formControlName="title" />
+    </div>
+    <div class="mb-3">
+      <label for="content" class="form-label">Content</label>
+      <input type="text" name="body" class="form-control" formControlName="body"/>
+    </div>
+    <button type="submit" class="btn btn-info">Create</button>
+  </form>
+</div>

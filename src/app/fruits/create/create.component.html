@@ -1,1 +1,48 @@
-<p>create works!</p>
+<div class="container">
+  <h1>Create Fruit</h1>
+  <hr />
+  <br />
+  <form>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <label for="name" class="form-label">Fruit</label>
+          <input
+            type="text"
+            class="form-control"
+            name="name"
+            [(ngModel)]="fruitObject.name"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <label for="quantity" class="form-label">Quantity</label>
+          <input
+            type="number"
+            class="form-control"
+            name="quantity"
+            [(ngModel)]="fruitObject.quantity"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <label for="price" class="form-label">Price</label>
+          <input
+            type="number"
+            class="form-control"
+            name="price"
+            [(ngModel)]="fruitObject.price"
+          />
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-primary" (click)="create()">Create</button>
+    <!-- change this to button type: submit -->
+  </form>
+</div>
