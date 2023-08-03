@@ -1,1 +1,16 @@
-<p>post-details works!</p>
+<div class="container">
+  <h1>Post {{ postObject.id }}</h1>
+  <a routerLink="/posts/home" class="btn btn-info">Back</a>
+  <br /><br />
+  <div class="row">
+    <div class="col">
+      <div class="mb-3">
+        <h4>Title:</h4>
+        {{ postObject.title }}
+        <br><br>
+        <h4>Content:</h4>
+        {{ postObject.body }}
+      </div>
+    </div>
+  </div>
+</div>

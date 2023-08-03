@@ -8,11 +8,17 @@
     <div class="mb-3">
       <label for="title" class="form-label">Title</label>
       <input type="text" name="title" class="form-control" formControlName="title" />
+      <div *ngIf="postForm.get('title').hasError('required')" class="alert alert-danger">
+        Please enter a title (Mandatory)
+      </div>
     </div>
     <div class="mb-3">
       <label for="content" class="form-label">Content</label>
       <input type="text" name="body" class="form-control" formControlName="body"/>
+      <div *ngIf="postForm.get('body').hasError('required')" class="alert alert-danger">
+        Please enter a body (Mandatory)
+      </div>
     </div>
-    <button type="submit" class="btn btn-info">Create</button>
+    <button type="submit" class="btn btn-info" [disabled]="!postForm.valid">Create</button>
   </form>
 </div>

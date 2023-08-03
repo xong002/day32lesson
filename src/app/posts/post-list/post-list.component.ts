@@ -21,7 +21,7 @@ export class PostListComponent {
   delete(id: number){
     this.postService.delete(id).subscribe(
       (data) => {
-        this.posts = this.posts.filter(o => o.id != id);
+        this.posts = this.posts.filter(o => o.id != id); //refresh the posts and filter for undeleted records
       }
     )
   }

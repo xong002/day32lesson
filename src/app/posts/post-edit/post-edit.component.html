@@ -1,1 +1,25 @@
-<p>post-edit works!</p>
+<div class="container">
+    <h1>Edit post</h1>
+    <a href="/posts/home" class="btn btn-info">Back</a>
+    <br /><br />
+    <br><br>
+    <form>
+        <div class="row">
+            <div class="col">
+                <div class="mb-3">
+                    <label for="title" class="form-label">Title</label>
+                    <input type="text" class="form-control" name="title" [(ngModel)]="postObject.title">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="mb-3">
+                    <label for="body" class="form-label">Content</label>
+                    <input type="text" class="form-control" name="body" [(ngModel)]="postObject.body">
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-primary" (click)="update()">Update</button>
+    </form>
+</div>

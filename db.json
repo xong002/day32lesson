@@ -15,13 +15,8 @@
   ],
   "posts": [
     {
-      "id": 1,
-      "title": "test title",
-      "body": "test body"
-    },
-    {
-      "title": "title 2",
-      "body": "content 2",
+      "title": "new content",
+      "body": "new content",
       "id": 2
     },
     {
