@@ -1,5 +1,50 @@
 <div class="container">
   <h1>Create Fruit</h1>
+  <br><br>
+  <form [formGroup]="fruitForm" (ngSubmit)="createFruit()">
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" name="name" formControlName="name">
+        </div>
+        <div class="alert alert-danger" *ngIf="fruitForm.get('name').hasError('required')">
+          Please enter name.
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <label for="quantity" class="form-label">Quantity</label>
+          <input type="number" class="form-control" name="quantity" formControlName="quantity">
+        </div>
+        <div class="alert alert-danger" *ngIf="fruitForm.get('quantity').hasError('required')">
+          Please enter quantity.
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <label for="price" class="form-label">Price</label>
+          <input type="number" class="form-control" name="price" formControlName="price">
+        </div>
+        <div class="alert alert-danger" *ngIf="fruitForm.get('price').hasError('required')">
+          Please enter price.
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-primary" type="submit">Submit</button>
+  </form>
+</div>
+
+
+
+
+<!-- static form -->
+<!-- <div class="container">
+  <h1>Create Fruit</h1>
   <hr />
   <br />
   <form>
@@ -43,6 +88,5 @@
       </div>
     </div>
     <button class="btn btn-primary" (click)="create()">Create</button>
-    <!-- change this to button type: submit -->
   </form>
-</div>
+</div> -->

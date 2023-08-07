@@ -9,7 +9,7 @@ import { PostEditComponent } from './posts/post-edit/post-edit.component';
 import { PostDetailsComponent } from './posts/post-details/post-details.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'posts/home', pathMatch: 'full' },
+  { path: '', redirectTo: 'fruits/home', pathMatch: 'full' },
   { path: 'fruits/home', component: HomeComponent },
   { path: 'fruits/create', component: CreateComponent},
   { path: 'fruits/edit/:id', component: EditComponent},

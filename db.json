@@ -11,6 +11,36 @@
       "name": "Apple",
       "quantity": 5,
       "price": 25
+    },
+    {
+      "name": "apple",
+      "quantity": 10,
+      "price": 1.23,
+      "id": 3
+    },
+    {
+      "name": "apple",
+      "quantity": 5,
+      "price": 1.23,
+      "id": 4
+    },
+    {
+      "name": "mango",
+      "quantity": 1,
+      "price": 5.555,
+      "id": 5
+    },
+    {
+      "name": "mango",
+      "quantity": 1,
+      "price": 5.555,
+      "id": 6
+    },
+    {
+      "name": "peach",
+      "quantity": 5,
+      "price": 2,
+      "id": 7
     }
   ],
   "posts": [
